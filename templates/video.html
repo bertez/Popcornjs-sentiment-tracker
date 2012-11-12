@@ -164,7 +164,10 @@
 
             <div class="content">
                 <div class="video-box">
-                    <video id="main" width="660" poster="{{ url_for('static', filename='mainposter.jpg') }}"  src="http://anavallasuiza.com/share/videos/victory_speech.webm"></video>
+                    <video id="main" width="660" poster="{{ url_for('static', filename='mainposter.jpg') }}">
+                        <source src="http://anavallasuiza.com/share/videos/victory_speech.webm" type="video/webm">
+                        <source src="http://anavallasuiza.com/share/videos/victory_speech.mp4" type="video/mp4">
+                    </video>
                     <button id="gogo">Play</button>
                     <div id="metabox">
                         <div id="subtitles"></div>
@@ -179,7 +182,7 @@
             <div id="viz"></div>
         </div>
         <div class="footer">
-            This demo was hacked during the 2012 Mozilla festival in London. Source code available <a href="https://github.com/bertez/Popcornjs-sentiment-tracker">on github</a>.<br/>Only works in browsers that supports webm video format.<br/>By <a target="_blank" href="http://twitter.com/bertez">@bertez</a>
+            This demo was hacked during the 2012 Mozilla festival in London. Source code available <a href="https://github.com/bertez/Popcornjs-sentiment-tracker">on github</a>.<br/>By <a target="_blank" href="http://twitter.com/bertez">@bertez</a>
         </div>
     </div>
 
