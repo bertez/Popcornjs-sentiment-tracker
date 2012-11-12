@@ -267,13 +267,22 @@
 
                     svg.append("g")
                         .attr("class", "y axis")
-                        .call(d3.svg.axis().scale(y).orient("left"));
+                        .call(d3.svg.axis().scale(y).tickValues([-1,-0.5,0,0.5,1]).orient("left"));
 
                     path = svg.append("path")
                         .data([video_data])
                         .attr("class", "line")
                         .attr("d", line);
 
+                    svg.selectAll("line.x")
+                        .data([-1,-0.5,0,0.5,1])
+                        .enter().append("line")
+                        .attr("class", "x")
+                        .attr("x1", 0)
+                        .attr("x2", width)
+                        .attr("y1", y)
+                        .attr("y2", y)
+                        .style("stroke", "#ccc");
                 });
 
             });
