@@ -59,6 +59,12 @@
                 font-size: .9em;
             }
 
+            .header h1{
+                margin: 5px 2px;
+                font-size: 1.6em;
+
+            }
+
             a, .header h1, .bottom h2{
                 color: #FE4365;
             }
@@ -89,7 +95,7 @@
                 text-align: center;
                 background: #FE4365;
                 box-sizing: border-box;
-                padding: 10px;
+                padding: 10px 0px;
                 color: #fff;
                 font-size: 1.3em;
                 font-weight: bold;
@@ -148,7 +154,7 @@
 
             <div class="header">
                 <h1>Popcornjs sentiment tracker</h1>
-                <p>This demo also uses <a href="http://sentiwordnet.isti.cnr.it/" target="_blank">Sentiwordnet</a> lexical database to measure the positive or negative sentiment of each sentence of the Obama 2012 victory speech and uses <a href="http://d3js.org/">D3.js</a> to visualize the data in "realtime". <br> </p>
+                <p>This demo uses the great <a href="https://github.com/clips/pattern" target="_blank">pattern</a> python library to query <a href="http://sentiwordnet.isti.cnr.it/" target="_blank">Sentiwordnet</a> lexical database to measure the positive or negative sentiment of each sentence of the Obama 2012 victory speech and uses <a href="http://d3js.org/">D3.js</a> to visualize the data in "realtime". And, of course, <a href="http://popcornjs.org">Popcornjs</a> to put it all together.<br> </p>
                 <div id="karma"><span>Accumulated sentiment index</span><p>0</p></div>
             </div>
 
@@ -165,7 +171,7 @@
         </div>
         <div class="bottom">
             <h2>Sentiment advance sentence-by-sentence</h1>
-            <p>each sentence gets a sentiment score from -1 to 1 based on the positivity or negativity of the words used. <a href="http://www.clips.ua.ac.be/pages/pattern-en#sentiment" target="_blank">Further info</a></p>
+            <p>each sentence gets a sentiment score from -1 to 1 based on the negativity or positivity of the words used. <a href="http://www.clips.ua.ac.be/pages/pattern-en#sentiment" target="_blank">Further info</a></p>
             <div id="viz"></div>
         </div>
         <div class="footer">
