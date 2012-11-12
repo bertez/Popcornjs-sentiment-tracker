@@ -14,9 +14,12 @@ Assuming you have installed python 2.6+, pip and virtualenv.
  7. Enable the development server: `python server.py`
  8. Go to: [http://localhost:8080][2]
 
+You can see a working demo here: [http://sentiment.dev.ber.to/][4]
+
 Have fun. You can contact me via twitter: [@bertez][3]
 
 
   [1]: http://www.clips.ua.ac.be/pages/pattern-en#sentiment
   [2]: http://localhost:8080
   [3]: https://twitter.com/bertez
+  [4]: http://sentiment.dev.ber.to/
