@@ -10,7 +10,7 @@ Assuming you have installed python 2.6+, pip and virtualenv.
  3. Create the virtual environment: `virtualenv venv --distribute`
  4. Activate the virtual environment:  `source venv/bin/activate`
  5. Install requeriments: `pip install -r requeriments.txt`
- 6. Follow the instructions [here][1] to get the Sentiwordnet database file and place it in the right folder (for testing purposes you can search google for "Sentiwordnet.txt" and get one)
+ 6. Follow the instructions [here][1] to get the Sentiwordnet database file and place it in the right folder (maybe for testing purposes you can search google for "Sentiwordnet.txt" and get one)
  7. Enable the development server: `python server.py`
  8. Go to: [http://localhost:8080][2]
 
